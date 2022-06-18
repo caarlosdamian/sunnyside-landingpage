@@ -1,0 +1,72 @@
+.header__container {
+  position: relative;
+
+  .header__title {
+    top: 195px;
+    position: absolute;
+    left: 345px;
+    font-family: "Fraunces 9pt Soft";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 69px;
+    text-align: center;
+    letter-spacing: 8.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .header_navbar {
+    position: absolute;
+    z-index: 2;
+    top: 34px;
+    left: 40px;
+    width: 1352px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 47px;
+
+      .header__navbar-container__titles {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: -0.128571px;
+        color: #ffffff;
+
+        &.button {
+          font-family: "Fraunces 9pt Soft";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 25px;
+          letter-spacing: -0.107143px;
+          text-transform: uppercase;
+          color: #24303e;
+          background: #ffffff;
+          border-radius: 28px;
+          padding: 15px;
+          cursor: pointer;
+          border: none;
+          outline: none;
+
+          &:hover {
+            background: #55d0f9;
+            color: white;
+            transition: ease-in-out 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .header__container-img {
+    width: 1440px;
+    height: 800px;
+  }
+}
