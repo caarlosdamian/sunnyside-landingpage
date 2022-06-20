@@ -1,0 +1,25 @@
+.middle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 720px);
+  .middle__grid-card {
+    height: 600px;
+    padding: 157px 135px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+
+    .middle-grid-header {
+      font-family: "Fraunces 9pt Soft";
+      src: url('../../fonts/fraunces-9pt-soft-black-italic.ttf');
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: -0.285714px;
+        width: 250px;
+      color: #24303e;
+    }
+  }
+}

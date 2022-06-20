@@ -2,6 +2,11 @@
   position: relative;
 
   .header__title {
+    @font-face {
+      font-family: "Fraunces 9pt Soft";
+      src: local("Fraunces 9pt Soft"),
+        url("../../fonts/fraunces-9pt-soft-black-italic.ttf") format("truetype");
+    }
     top: 195px;
     position: absolute;
     left: 345px;
