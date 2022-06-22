@@ -1,0 +1,76 @@
+.bottom-top__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 81px;
+  padding: 160px 165px;
+
+  .bottom-top__header {
+    font-family: "Fraunces 9pt Soft";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #a7aaad;
+  }
+  .bottom-top__grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    .bottom-top__card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 58px;
+
+      .bottom-top__img {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+      }
+      .bottom-top__subtitle {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -0.128571px;
+        color: #5b636d;
+        width: 350px;
+      }
+      .bottom-top__grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .bottom-top__grid-container__header {
+          font-family: "Fraunces 9pt Soft";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          letter-spacing: -0.128571px;
+          color: #24303e;
+        }
+        .bottom-top__grid-container__subtitle {
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 25px;
+          text-align: center;
+          letter-spacing: -0.1px;
+          color: #a7aaad;
+        }
+      }
+    }
+  }
+}
