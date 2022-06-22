@@ -1,6 +1,6 @@
 .header__container {
   position: relative;
-
+  max-height: 800px;
   .header__title {
     @font-face {
       font-family: "Fraunces 9pt Soft";
@@ -72,6 +72,6 @@
   }
   .header__container-img {
     width: 1440px;
-    height: 800px;
+    height: 100%;
   }
 }

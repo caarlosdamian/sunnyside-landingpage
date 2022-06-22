@@ -1,25 +1,77 @@
 .middle-grid {
   display: grid;
-  grid-template-columns: repeat(2, 720px);
+  grid-template-columns: repeat(2, 1fr);
+  width: 1440px;
   .middle__grid-card {
     height: 600px;
-    padding: 157px 135px;
+    padding: 157px 165px 110px 157px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 32px;
 
+    .middle__grid-card-img {
+      img {
+        width: 720px;
+        height: 600px;
+      }
+    }
+
+    .bottom__button {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .middle-grid__subtext {
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        z-index: 2;
+        color: #24303E;
+      }
+
+      .line{
+        width: 137px;
+        border-bottom: 10px solid #FAD400;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        border-radius: 28px;
+        position: absolute;
+        top: 55%;
+
+      }
+    }
+
     .middle-grid-header {
       font-family: "Fraunces 9pt Soft";
-      src: url('../../fonts/fraunces-9pt-soft-black-italic.ttf');
+      src: url("../../fonts/fraunces-9pt-soft-black-italic.ttf");
       font-style: normal;
       font-weight: 900;
       font-size: 40px;
       line-height: 49px;
       letter-spacing: -0.285714px;
-        width: 250px;
+      width: 250px;
       color: #24303e;
+    }
+    .middle-grid__subtitle{
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: -0.128571px;
+
+color: #808397;
+
     }
   }
 }
