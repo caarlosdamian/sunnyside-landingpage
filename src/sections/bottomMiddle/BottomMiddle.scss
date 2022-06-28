@@ -1,0 +1,8 @@
+.bottom-middle__container {
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+
+    .bottom-middle__img {
+        height: 447px;
+    }
+}
