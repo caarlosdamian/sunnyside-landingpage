@@ -3,8 +3,23 @@
   grid-template-columns: repeat(2, 1fr);
   width: 1440px;
 
+  @media (max-width: 375px) {
+    width: 375px;
+    display: grid;
+    grid-template-columns: repeat(1, 375px);
+  }
+
   .middle__grid-card-img-relative {
     position: relative;
+
+    .img-card {
+      @media (max-width: 375px) {
+        width: 375px;
+        display: grid;
+        grid-template-columns: repeat(1, 375px);
+      }
+    }
+
     .middle__grid-card-img-relative-container {
       position: absolute;
       top: 398px;
@@ -16,6 +31,11 @@
       flex-direction: column;
       gap: 27px;
 
+      @media (max-width: 375px) {
+        width: 327px;
+        left: 24px;
+      }
+
       .middle__grid-card-img-relative__header {
         font-family: "Fraunces 9pt Soft";
         font-style: normal;
@@ -25,6 +45,17 @@
         text-align: center;
         letter-spacing: -0.2px;
         color: #24554a;
+
+        @media (max-width: 375px) {
+          font-weight: 900;
+          font-size: 28px;
+          line-height: 35px;
+          text-align: center;
+          letter-spacing: -0.2px;
+          color: #052C3B;
+          mix-blend-mode: normal;
+          opacity: 0.75;
+        }
       }
 
       .middle__grid-card-img-relative__subtitle {
@@ -36,16 +67,34 @@
         text-align: center;
         letter-spacing: -0.114286px;
         color: #24554a;
+
+        @media (max-width: 375px) {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 27px;
+          text-align: center;
+          letter-spacing: -0.114286px;
+          color: #24554A;
+
+        }
       }
     }
   }
+
   .middle__grid-card-img {
     max-height: 600px;
+
     .img-card {
       width: 720px;
       max-height: 600px;
+
+      @media (max-width: 375px) {
+        width: 375px;
+        height: 312px;
+      }
     }
   }
+
   .middle__grid-card {
     max-height: 600px;
     padding: 157px 165px 110px 157px;
@@ -54,6 +103,11 @@
     justify-content: center;
     flex-direction: column;
     gap: 32px;
+
+    @media (max-width: 375px) {
+      padding: 60px 24px;
+      align-items: center;
+    }
 
     .bottom__button {
       position: relative;
@@ -67,6 +121,7 @@
         .line {
           border-bottom: 10px solid #fad400;
           opacity: 1;
+
           &.orange {
             border-bottom: 10px solid #fe7766;
           }
@@ -93,6 +148,7 @@
         border-radius: 28px;
         position: absolute;
         top: 55%;
+
         &.orange {
           border-bottom: 10px solid #fe7766;
         }
@@ -109,7 +165,20 @@
       letter-spacing: -0.285714px;
       width: 250px;
       color: #24303e;
+
+      @media (max-width: 375px) {
+        font-family: 'Fraunces 9pt Soft';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: -0.228571px;
+        color: #24303E;
+        max-width: 327px;
+      }
     }
+
     .middle-grid__subtitle {
       font-family: "Barlow";
       font-style: normal;
@@ -118,6 +187,24 @@
       line-height: 30px;
       letter-spacing: -0.128571px;
       color: #808397;
+
+      @media (max-width: 375px) {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -0.128571px;
+        width: 327px;
+        color: #808397;
+      }
     }
   }
+}
+
+
+#egg-card {
+  grid-row-start: 1;
+  grid-row-end: 2;
 }

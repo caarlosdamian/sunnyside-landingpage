@@ -10,8 +10,8 @@ function App() {
   return (
     <main className="App">
      <Header/>
-     {/* <Middle/>
-     <BottomTop/>
+     <Middle/>
+     {/* <BottomTop/>
      <BottomMiddle/>
      <Footer/> */}
     </main>

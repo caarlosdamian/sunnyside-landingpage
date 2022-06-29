@@ -1,11 +1,17 @@
 import React from "react";
 import egg from "../../images/desktop/image-transform.jpg";
+import eggMobile from "../../images/mobile/image-transform.jpg";
 import cup from "../../images/desktop/image-stand-out.jpg";
+import cupMobile from "../../images/mobile/image-stand-out.jpg";
 import cherri from "../../images/desktop/image-graphic-design.jpg";
+import cherriMobile from "../../images/mobile/image-graphic-design.jpg";
 import orange from "../../images/desktop/image-photography.jpg";
+import orangeMobile from "../../images/mobile/image-photography.jpg";
 import "./Middle.scss";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 export const Middle = () => {
+  const { width } = useWindowSize();
   return (
     <div className="middle-grid">
       <div className="middle__grid-card">
@@ -20,11 +26,11 @@ export const Middle = () => {
           <div className="line"></div>
         </div>
       </div>
-      <div className="middle__grid-card-img">
-        <img className="img-card" src={egg} alt="egg" />
+      <div id="egg-card" className="middle__grid-card-img">
+        <img className="img-card" src={width <=375? eggMobile: egg} alt="egg" />
       </div>
       <div className="middle__grid-card-img">
-        <img className="img-card" src={cup} alt="cup" />
+        <img className="img-card"  src={width <=375? cupMobile: cup}  alt="cup" />
       </div>
       <div className="middle__grid-card">
         <h1 className="middle-grid-header">Stand out to the right audience</h1>
@@ -37,7 +43,7 @@ export const Middle = () => {
         </div>
       </div>
       <div className="middle__grid-card-img-relative">
-        <img className="img-card" src={cherri} alt="cup" />
+        <img className="img-card" src={width <=375? cherriMobile: cherri}   alt="cup" />
         <div className="middle__grid-card-img-relative-container">
           <h1 className="middle__grid-card-img-relative__header">
             Graphic Design
@@ -50,7 +56,7 @@ export const Middle = () => {
         </div>
       </div>
       <div className="middle__grid-card-img-relative">
-        <img className="img-card" src={orange} alt="orange" />
+        <img className="img-card" src={width <=375? orangeMobile: orange} alt="orange" />
         <div className="middle__grid-card-img-relative-container">
           <h1 className="middle__grid-card-img-relative__header">
           Photography
