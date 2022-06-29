@@ -6,6 +6,10 @@
   gap: 81px;
   padding: 160px 165px;
 
+  @media (max-width: 375px) {
+    padding: 64px 24px;
+  }
+
   .bottom-top__header {
     font-family: "Fraunces 9pt Soft";
     font-style: normal;
@@ -15,12 +19,24 @@
     text-align: center;
     letter-spacing: 5px;
     color: #a7aaad;
+
+    @media (max-width: 375px) {
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 4px;
+      color: #A7AAAD;
+
+    }
   }
+
   .bottom-top__grid {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
+
     .bottom-top__card {
       display: flex;
       align-items: center;
@@ -33,6 +49,7 @@
         height: 72px;
         border-radius: 50%;
       }
+
       .bottom-top__subtitle {
         font-family: "Barlow";
         font-style: normal;
@@ -43,7 +60,18 @@
         letter-spacing: -0.128571px;
         color: #5b636d;
         width: 350px;
+        @media (max-width: 375px) {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: -0.128571px;
+          color: #5B636D;
+          width: 327px;
+    
+        }
       }
+
       .bottom-top__grid-container {
         display: flex;
         justify-content: center;
@@ -60,6 +88,7 @@
           letter-spacing: -0.128571px;
           color: #24303e;
         }
+
         .bottom-top__grid-container__subtitle {
           font-family: "Barlow";
           font-style: normal;

@@ -205,6 +205,10 @@
 
 
 #egg-card {
-  grid-row-start: 1;
-  grid-row-end: 2;
+
+  @media (max-width: 375px) {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
 }

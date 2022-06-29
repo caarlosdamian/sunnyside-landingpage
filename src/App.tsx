@@ -11,8 +11,8 @@ function App() {
     <main className="App">
      <Header/>
      <Middle/>
-     {/* <BottomTop/>
-     <BottomMiddle/>
+     <BottomTop/>
+     {/* <BottomMiddle/>
      <Footer/> */}
     </main>
   )
