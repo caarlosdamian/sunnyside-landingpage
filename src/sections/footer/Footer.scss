@@ -8,12 +8,19 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    .footer-middle_container{
+
+    .logo-footer {
+        width: 170px;
+        height: 33px;
+    }
+
+    .footer-middle_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 47px;
-        .footer-middle_container-span{
+
+        .footer-middle_container-span {
             font-family: 'Barlow';
             font-style: normal;
             font-weight: 600;
@@ -22,17 +29,20 @@
             letter-spacing: -0.128571px;
             color: #458D7E;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 color: #FFFFFF;
             }
-        } 
+        }
     }
-    .footer-bottom_container{
+
+    .footer-bottom_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 28px;
-        .footer-bottom-img{
+
+        .footer-bottom-img {
             cursor: pointer;
         }
     }

@@ -13,7 +13,7 @@ function App() {
      <Middle/>
      <BottomTop/>
      <BottomMiddle/>
-     {/* <Footer/> */}
+     <Footer/>
     </main>
   )
 }

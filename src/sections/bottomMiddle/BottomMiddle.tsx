@@ -20,17 +20,18 @@ export const BottomMiddle = () => {
         className="bottom-middle__img"
       />
       <img
-        src={width <= 375 ? coneMobile : cone}
+        src={width <=  375 ? coneMobile : cone}
         alt="cone"
         className="bottom-middle__img"
+        id="cone"
       />
       <img
-        src={width <= 375 ? orangeMobile : orange}
+        src={width <=  375 ? orangeMobile : orange}
         alt="orange"
         className="bottom-middle__img"
       />
       <img
-        src={width <= 375 ? sugarMobile : sugar}
+        src={width <=  375 ? sugarMobile : sugar}
         alt="sugar"
         className="bottom-middle__img"
       />
