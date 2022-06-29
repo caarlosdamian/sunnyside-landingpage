@@ -12,8 +12,8 @@ function App() {
      <Header/>
      <Middle/>
      <BottomTop/>
-     {/* <BottomMiddle/>
-     <Footer/> */}
+     <BottomMiddle/>
+     {/* <Footer/> */}
     </main>
   )
 }
