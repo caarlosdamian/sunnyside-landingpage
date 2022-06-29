@@ -54,7 +54,7 @@
     align-items: center;
 
     @media (max-width: 375px) {
-      width: 300px;
+      width: 310px;
       position: fixed;
     }
 
@@ -63,7 +63,6 @@
       justify-content: space-between;
       align-items: center;
       gap: 47px;
-
       @media (max-width: 375px) {
         gap: 0px;
       }

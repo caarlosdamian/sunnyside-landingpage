@@ -1,0 +1,59 @@
+.menu-container {
+    background: #fff;
+    padding: 39px 95px;
+    width: 329px;
+    height: 329px;
+    position: absolute;
+    top: 106px;
+    left: 22px;
+    z-index: 9999;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    transition: transform 0.5s;
+
+
+    .menu-triangle {
+        width: 0;
+        height: 0;
+        border: 24px solid transparent;
+        border-top: 0;
+        border-right: 24px solid #fff;
+        transform: rotate(90deg);  
+        position: absolute;
+        top: -35px;
+        right: -12px;
+      }
+
+    .menu-span {
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: -0.142857px;
+        color: #808397;
+        text-align: center;
+
+        &.button {
+            background: #FBD600;
+            border-radius: 28px;
+
+            padding: 16px;
+            font-family: 'Fraunces 9pt Soft';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.107143px;
+            text-transform: uppercase;
+            color: #24303E;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
